@@ -20,11 +20,6 @@
 
 
   <ItemGroup>
-    <Folder Include="Areas\Admin\Controllers\" />
-  </ItemGroup>
-
-
-  <ItemGroup>
     <ProjectReference Include="..\CoreWebApp.DataAccess\CoreWebApp.DataAccess.csproj" />
   </ItemGroup>
 

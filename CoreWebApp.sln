@@ -4,12 +4,16 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 16.0.29613.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoreWebApp", "CoreWebApp\CoreWebApp.csproj", "{7225778D-A0E0-4685-B2C3-1D0A39BC47C0}"
+	ProjectSection(ProjectDependencies) = postProject
+		{BDBD3C07-3CDE-404C-893F-532ACBA8E454} = {BDBD3C07-3CDE-404C-893F-532ACBA8E454}
+		{A3BEA881-B859-4E26-A2DC-60382393E831} = {A3BEA881-B859-4E26-A2DC-60382393E831}
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreWebApp.DataAccess", "CoreWebApp.DataAccess\CoreWebApp.DataAccess.csproj", "{A3EB93B7-8166-41AE-8427-15B83CA8E191}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoreWebApp.DataAccess", "CoreWebApp.DataAccess\CoreWebApp.DataAccess.csproj", "{A3EB93B7-8166-41AE-8427-15B83CA8E191}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreWebApp.Models", "CoreWebApp.Models\CoreWebApp.Models.csproj", "{A3BEA881-B859-4E26-A2DC-60382393E831}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoreWebApp.Models", "CoreWebApp.Models\CoreWebApp.Models.csproj", "{A3BEA881-B859-4E26-A2DC-60382393E831}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreWebApp.Utilities", "ClassLibrary1\CoreWebApp.Utilities.csproj", "{BDBD3C07-3CDE-404C-893F-532ACBA8E454}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoreWebApp.Utilities", "ClassLibrary1\CoreWebApp.Utilities.csproj", "{BDBD3C07-3CDE-404C-893F-532ACBA8E454}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
