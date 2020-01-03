@@ -7,6 +7,10 @@ namespace CoreWebApp.DataAccess.Data.Repository.IRepository
         ICategoryRepository Category { get; }
 
         IFrequencyRepository Frequency { get; }
+
+        IServiceRepository Service { get; }
+
+        IUserRepository User { get; }
         void Save();
     }
 }

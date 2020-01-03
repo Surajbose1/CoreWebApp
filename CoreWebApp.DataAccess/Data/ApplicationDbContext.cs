@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using CoreWebApp.Models;
+﻿using CoreWebApp.Models;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
@@ -16,5 +13,9 @@ namespace CoreWebApp.DataAccess.Data
 
         public DbSet<Category> Category {get;set;}
         public DbSet<Frequency> Frequency { get; set; }
+
+        public DbSet<Service> Service { get; set; }
+        public DbSet<ApplicationUser> ApplicationUser { get; set; }
+         
     }
 }

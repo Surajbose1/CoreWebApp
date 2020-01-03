@@ -14,6 +14,8 @@ using Microsoft.Extensions.Hosting;
 using CoreWebApp.DataAccess.Data;
 using CoreWebApp.DataAccess.Data.Repository.IRepository;
 using CoreWebApp.DataAccess.Data.Repository;
+using CoreWebApp.Utilities;
+using Microsoft.AspNetCore.Identity.UI.Services;
 
 namespace CoreWebApp
 {
@@ -37,6 +39,7 @@ namespace CoreWebApp
                 .AddEntityFrameworkStores<ApplicationDbContext>()
                 .AddDefaultTokenProviders();
 
+            services.AddSingleton<IEmailSender, EmailSender>();
             services.AddScoped<IUnitOfWork, UnitOfWork>();
 
             //SB Comment: Enable content refresh without the need to restart the project
